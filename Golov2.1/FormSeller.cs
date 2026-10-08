@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Golov2._1.ADO.NET;
 
 namespace Golov2._1
 {
@@ -15,6 +16,19 @@ namespace Golov2._1
         public FormSeller()
         {
             InitializeComponent();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void FormSeller_Load(object sender, EventArgs e)
+        {
+            ModelEF model = new ModelEF();
+            labelNames.Text = FormAutorization.Enter_User.First_Name + " " + FormAutorization.Enter_User.Second_Name;
+            labelRole.Text = model.Roles.First(x=> x.ID == FormAutorization.Enter_User.RoleID).Name;
+            pictureBoxSeller.Image = Image.FromFile(@"Photo\" + FormAutorization.Enter_User.Pictures);
         }
     }
 }
