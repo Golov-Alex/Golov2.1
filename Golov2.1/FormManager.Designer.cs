@@ -71,9 +71,9 @@
             this.TextLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TextLabel1.Location = new System.Drawing.Point(254, 182);
             this.TextLabel1.Name = "TextLabel1";
-            this.TextLabel1.Size = new System.Drawing.Size(249, 32);
+            this.TextLabel1.Size = new System.Drawing.Size(265, 32);
             this.TextLabel1.TabIndex = 11;
-            this.TextLabel1.Text = "Форма менджера";
+            this.TextLabel1.Text = "Форма менеджера";
             // 
             // buttonExit
             // 
@@ -97,7 +97,7 @@
             this.Controls.Add(this.TextLabel1);
             this.Controls.Add(this.buttonExit);
             this.Name = "FormManager";
-            this.Text = "FormManager";
+            this.Text = "Менеджер";
             this.Load += new System.EventHandler(this.FormManager_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxManager)).EndInit();
             this.ResumeLayout(false);
